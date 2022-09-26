@@ -5,6 +5,7 @@ import expenseTotal from "../selectors/expenseTotal";
 import { Link } from 'react-router-dom'
 import numeral from 'numeral'
 
+
 export const ExpensesSummary = ({ count, total }) => {
     const expenseWord = count === 1 ? 'expense' : 'expenses'
     const formatedTotal = numeral(total / 100).format('$0,0.00')
